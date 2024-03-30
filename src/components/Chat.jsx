@@ -13,10 +13,10 @@ export const Chat = (props) => {
         zoom: 12,
       });
 
-      // Sample police station data (replace this with actual data)
+      // Replace this with your parsed police station data
       const policeStations = [
-        { name: "Police Station 1", location: { lat: 43.653225, lng: -79.383186 } },
-        { name: "Police Station 2", location: { lat: 43.643715, lng: -79.391369 } },
+        // { name: "Police Station 1", location: { lat: 43.653225, lng: -79.383186 } },
+        // { name: "Police Station 2", location: { lat: 43.643715, lng: -79.391369 } },
         // Add more police station data as needed
       ];
 
