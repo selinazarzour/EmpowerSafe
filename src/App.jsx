@@ -3,7 +3,7 @@ import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
 import { About } from "./components/about";
-import { Services } from "./components/services";
+import { Chat } from "./components/Chat";
 import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
@@ -70,7 +70,7 @@ const LandingPage = ({ landingPageData }) => {
       <Header data={landingPageData.Header} />
       <Features data={featureData} />
       <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
+      <Chat data={landingPageData.Chat} />
       <Team data={teamData} />
       <Contact data={landingPageData.Contact} />
     </div>

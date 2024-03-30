@@ -38,8 +38,8 @@ export const Navigation = (props) => {
               </a>
             </li>
             <li>
-              <a href="#services" className="page-scroll">
-                Services
+              <a href="#chat" className="page-scroll">
+                Chat Bot
               </a>
             </li>
             <li>
