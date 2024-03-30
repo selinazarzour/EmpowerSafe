@@ -67,6 +67,23 @@ This project is licensed under the [MIT License](LICENSE).
 - Special thanks to [name] for their assistance with [feature]
 - Inspiration from [source]
 
----
+Success! Created app-name at /workspaces/EmpowerSafe/app-name
+Inside that directory, you can run several commands:
 
-Feel free to customize this template to fit your project's specific details and requirements!
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd app-name
+  npm start
