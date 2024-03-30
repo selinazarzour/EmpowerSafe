@@ -1,89 +1,34 @@
-# EmpowerSafe
+# React JS Landing Page Template
 
-EmpowerSafe is a website designed to help users navigate safely through different areas by providing insights into the safety level of those areas based on various factors such as population density, gender, time of day, and more. It also recommends routes based on safety, speed, and other user preferences.
+**
 
-## Features
+# 🛎️🛎️ Good news! New & improved [V2](https://github.com/issaafalkattan/react-landing-page-template-2021) is out  
 
-- **Safety Assessment:** Users can input their destination and relevant information such as gender and whether they are alone, and the application will provide an assessment of the safety level of the area.
-- **Route Recommendations:** SafeRoute suggests routes that prioritize safety, speed, or other user-defined preferences.
-- **Chatbot/Call:** Users can engage with a chatbot or make a call for assistance or additional information.
-- **Database Integration:** Utilizes existing databases to alert users in case they are approaching or in a dangerous area.
-- **User Matching:** Matches users in the same area to facilitate group travel and enhance safety through numbers.
+**
 
-## Technologies Used
 
-- **Frontend:** HTML, CSS, JavaScript, React.js
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Mapping & Geolocation:** Google Maps API
-- **Chatbot Integration:** Dialogflow API
-- **Communication:** Twilio API (for calls and SMS)
+### <a href="https://react-landing-page-template-93ne.vercel.app/">LIVE DEMO</a> 
 
-## Getting Started
+## Description
+This is a ReactJS based landing page template, fit for a startup company/service with a one page view. The design is inspired by a template from <a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
+All 'visual' data can be easily modified by changing the data.json file.
 
-### Prerequisites
+## Make it Yours!
+### 1. Preps
+You will need to have <a href="https://nodejs.org/">Node JS</a> installed on your pc. 
 
-- Node.js and npm installed locally
-- MongoDB set up and running
-- Google Maps API key
-- Dialogflow API credentials
-- Twilio API credentials
+### 2. Clone Files
+After cloning the files, you will have to run ```yarn``` followed by ```yarn start``` in the CLI
+### 3. Add your own data 
+Change the data in the ```data.json``` file as well as add any images to ```public/img/```
+You can also change styles by modifying the ```public/css``` files.
+If you need the contact form to work, you also need to create an EmailJS account, and modify the ```src/components/contact.jsx``` file to replace your own service ID, template ID and Public Key
 
-### Installation
+## Like this project?
+<a href="https://www.buymeacoffee.com/issaaf">Buy my a coffee ☕️</a>
 
-1. Clone the repository: `git clone https://github.com/your-username/saferoute.git`
-2. Navigate to the project directory: `cd saferoute`
-3. Install dependencies: `npm install`
-4. Set up environment variables:
-   - Create a `.env` file in the root directory.
-   - Add the following variables:
-     ```
-     PORT=3000
-     MONGODB_URI=your_mongodb_connection_string
-     GOOGLE_MAPS_API_KEY=your_google_maps_api_key
-     DIALOGFLOW_PROJECT_ID=your_dialogflow_project_id
-     TWILIO_ACCOUNT_SID=your_twilio_account_sid
-     TWILIO_AUTH_TOKEN=your_twilio_auth_token
-     ```
-5. Start the server: `npm start`
-6. Open your web browser and navigate to `http://localhost:3000` to access the application.
+## Credits
+##### Free CSS 
+<a href="https://www.free-css.com/assets/files/free-css-templates/preview/page234/interact/">Free-CSS.com </a>
 
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/new-feature`
-3. Commit your changes: `git commit -am 'Add new feature'`
-4. Push to the branch: `git push origin feature/new-feature`
-5. Submit a pull request
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-- Special thanks to [name] for their assistance with [feature]
-- Inspiration from [source]
-
-Success! Created app-name at /workspaces/EmpowerSafe/app-name
-Inside that directory, you can run several commands:
-
-  npm start
-    Starts the development server.
-
-  npm run build
-    Bundles the app into static files for production.
-
-  npm test
-    Starts the test runner.
-
-  npm run eject
-    Removes this tool and copies build dependencies, configuration files
-    and scripts into the app directory. If you do this, you can’t go back!
-
-We suggest that you begin by typing:
-
-  cd app-name
-  npm start
+##### Issaaf kattan
