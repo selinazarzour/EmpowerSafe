@@ -58,7 +58,6 @@ export const Maps = (props) => {
                                                 break;
                                             }
                                         }
-
                                         const currentDate = new Date();
                                         const dayOfYear = Math.ceil((currentDate - new Date(currentDate.getFullYear(), 0, 0)) / 86400000);
                                         const dayOfWeek = currentDate.getDay() === 0 ? 7 : currentDate.getDay(); // Adjust for Sunday
