@@ -44,13 +44,33 @@ export const Maps = (props) => {
 
                         // Add click event listener to user's marker
                         userMarker.addListener("click", () => {
-                            const currentDate = new Date();
-                            const dayOfYear = Math.ceil((currentDate - new Date(currentDate.getFullYear(), 0, 0)) / 86400000);
-                            const dayOfWeek = currentDate.getDay() === 0 ? 7 : currentDate.getDay(); // Adjust for Sunday
-                            const hour = currentDate.getHours();
+                            // Reverse geocode user's location to get neighborhood number
+                            const geocoder = new window.google.maps.Geocoder();
+                            const latLng = { lat: userLatitude, lng: userLongitude };
+                            geocoder.geocode({ location: latLng }, (results, status) => {
+                                if (status === "OK") {
+                                    if (results[0]) {
+                                        let neighborhoodNumber;
+                                        for (let i = 0; i < results[0].address_components.length; i++) {
+                                            const component = results[0].address_components[i];
+                                            if (component.types.includes("neighborhood")) {
+                                                neighborhoodNumber = component.short_name;
+                                                break;
+                                            }
+                                        }
 
-                            alert(`Latitude: ${userLatitude}, Longitude: ${userLongitude}\nDay of the year: ${dayOfYear}\nDay of the week: ${dayOfWeek}\nHour: ${hour}`);
+                                        const currentDate = new Date();
+                                        const dayOfYear = Math.ceil((currentDate - new Date(currentDate.getFullYear(), 0, 0)) / 86400000);
+                                        const dayOfWeek = currentDate.getDay() === 0 ? 7 : currentDate.getDay(); // Adjust for Sunday
+                                        const hour = currentDate.getHours();
+
+                                        alert(`Latitude: ${userLatitude}, Longitude: ${userLongitude}\nDay of the year: ${dayOfYear}\nDay of the week: ${dayOfWeek}\nHour: ${hour}\nNeighborhood number: ${neighborhoodNumber}`);
+
+                                    }
+                                }
+                            });
                         });
+
                     },
                     (error) => {
                         console.error("Error getting user location:", error);
