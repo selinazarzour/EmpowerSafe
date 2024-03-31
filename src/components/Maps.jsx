@@ -44,7 +44,12 @@ export const Maps = (props) => {
 
                         // Add click event listener to user's marker
                         userMarker.addListener("click", () => {
-                            alert(`Latitude: ${userLatitude}, Longitude: ${userLongitude}`);
+                            const currentDate = new Date();
+                            const dayOfYear = Math.ceil((currentDate - new Date(currentDate.getFullYear(), 0, 0)) / 86400000);
+                            const dayOfWeek = currentDate.getDay() === 0 ? 7 : currentDate.getDay(); // Adjust for Sunday
+                            const hour = currentDate.getHours();
+
+                            alert(`Latitude: ${userLatitude}, Longitude: ${userLongitude}\nDay of the year: ${dayOfYear}\nDay of the week: ${dayOfWeek}\nHour: ${hour}`);
                         });
                     },
                     (error) => {
@@ -54,6 +59,16 @@ export const Maps = (props) => {
             } else {
                 console.error("Geolocation is not supported by this browser.");
             }
+
+            // Get current date and time
+            const currentDate = new Date();
+            const dayOfYear = Math.ceil((currentDate - new Date(currentDate.getFullYear(), 0, 0)) / 86400000);
+            const dayOfWeek = currentDate.getDay() === 0 ? 7 : currentDate.getDay(); // Adjust for Sunday
+            const hour = currentDate.getHours();
+
+            console.log("Day of the year:", dayOfYear);
+            console.log("Day of the week:", dayOfWeek);
+            console.log("Hour:", hour);
 
             // Replace this with your parsed police station data
             const policeStations = [
