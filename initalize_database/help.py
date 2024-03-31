@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error
 import pandas as pd
 
 def prediction_model():
-    data = pd.read_csv('EmpowerSafe/initalize_database/safetyScore_assaultData.csv')
+    data = pd.read_csv('EmpowerSafe/initalize_database/Assault_Open_Data_Safety.csv')
 
     cols = ['OCC_YEAR', 'OCC_DOY', 'OCC_DOW', 'OCC_HOUR', 'LONG', 'LAT']
     X = data[cols]
