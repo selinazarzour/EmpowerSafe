@@ -3,11 +3,11 @@ import { Navigation } from "./components/navigation";
 import { Header } from "./components/header";
 import { Features } from "./components/features";
 import { About } from "./components/about";
+import { Maps } from "./components/Maps";
 import { Chat } from "./components/Chat";
 import { Gallery } from "./components/gallery";
 import { Testimonials } from "./components/testimonials";
 import { Team } from "./components/Team";
-import { Contact } from "./components/contact";
 import JsonData from "./data/data.json";
 import SmoothScroll from "smooth-scroll";
 import "./App.css";
@@ -43,22 +43,22 @@ const featureData = [
 const teamData = [
   {
     name: "Linda Gao",
-    job: "CEO",
+    job: "Project Manager",
     image: "img/team/linda.jpeg", // Replace with actual image URL
   },
   {
     name: "Selina Zarzour",
-    job: "Lead Developer",
+    job: "Frontend Developer",
     image: "https://media.licdn.com/dms/image/D5603AQFKJA9a3JgkYQ/profile-displayphoto-shrink_800_800/0/1703831751128?e=1717027200&v=beta&t=yXPNZF11FjATyL41EYBoRTpMTBRq-TGvHaKgGlycQz0", // Replace with actual image URL
   },
   {
     name: "Arushi Bhatt",
-    job: "Designer",
+    job: "Backend Developer",
     image: "https://example.com/arushi.jpg", // Replace with actual image URL
   },
   {
     name: "Stuti",
-    job: "Marketing Manager",
+    job: "Data Analyst",
     image: "https://example.com/stuti.jpg", // Replace with actual image URL
   },
 ];
@@ -71,8 +71,8 @@ const LandingPage = ({ landingPageData }) => {
       <Features data={featureData} />
       <About data={landingPageData.About} />
       <Chat data={landingPageData.Chat} />
+      <Maps data={landingPageData.Maps} />
       <Team data={teamData} />
-      <Contact data={landingPageData.Contact} />
     </div>
   );
 };

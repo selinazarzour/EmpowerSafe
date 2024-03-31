@@ -1,6 +1,13 @@
 import React from "react";
 
 export const Navigation = (props) => {
+  const handleNavClick = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -17,7 +24,11 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
             <span className="icon-bar"></span>{" "}
           </button>
-          <a className="navbar-brand page-scroll" href="#page-top">
+          <a
+            className="navbar-brand page-scroll"
+            href="#page-top"
+            onClick={() => handleNavClick("page-top")}
+          >
             Empower Safe
           </a>{" "}
         </div>
@@ -28,28 +39,48 @@ export const Navigation = (props) => {
         >
           <ul className="nav navbar-nav navbar-right">
             <li>
-              <a href="#features" className="page-scroll">
+              <a
+                href="#features"
+                className="page-scroll"
+                onClick={() => handleNavClick("features")}
+              >
                 Features
               </a>
             </li>
             <li>
-              <a href="#about" className="page-scroll">
+              <a
+                href="#about"
+                className="page-scroll"
+                onClick={() => handleNavClick("about")}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#chat" className="page-scroll">
+              <a
+                href="#chat"
+                className="page-scroll"
+                onClick={() => handleNavClick("Chat")}
+              >
                 Chat Bot
               </a>
             </li>
             <li>
-              <a href="#team" className="page-scroll">
-                Team
+              <a
+                href="#maps"
+                className="page-scroll"
+                onClick={() => handleNavClick("Maps")}
+              >
+                Maps Help
               </a>
             </li>
             <li>
-              <a href="#contact" className="page-scroll">
-                Contact
+              <a
+                href="#team"
+                className="page-scroll"
+                onClick={() => handleNavClick("team")}
+              >
+                Team
               </a>
             </li>
           </ul>
