@@ -1,24 +1,20 @@
-EmpowerSafe is a website designed to help users navigate safely through different areas by providing insights into the safety level of those areas based on various factors such as populat ion density, gender, time of day, and more. It also recommends routes based on safety, speed, and other user preferences.
+EmpowerSafe is a website designed to help users navigate safely through different areas by providing insights into the safety level of those areas based on various factors such as time of day, location, day of week, season, and more. It also provides a chatbot to guide the user to emergency contacts and other action they might need to take.
 
 Features
 
 Safety Assessment: Users can input their destination and relevant information such as gender and whether they are alone, and the application will provide an assessment of the safety level of the area.
-Route Recommendations: SafeRoute suggests routes that prioritize safety, speed, or other user-defined preferences.
+Police Station Locations: EmpowerSafe shows locations of police stations near the user.
 Chatbot/Call: Users can engage with a chatbot or make a call for assistance or additional information.
 Database Integration: Utilizes existing databases to alert users in case they are approaching or in a dangerous area.
-User Matching: Matches users in the same area to facilitate group travel and enhance safety through numbers.
-Technologies Used
 
 Frontend: HTML, CSS, JavaScript, React.js
 Backend: Node.js, Express.js
-Database: MongoDB
+Database: Toronto Police Service Open Data, sklearn, pandas, RandomForestRegression
 Mapping & Geolocation: Google Maps API
-Chatbot Integration: Dialogflow API
-Communication: Twilio API (for calls and SMS)
-Getting Started
+Chatbot Integration: Dialogflow API (Vertex AI)
 
 Prerequisites
-Node.js and npm installed locally
+Node.js, npm and pandas installed locally
 Google Maps API key
 Dialogflow API credentials
 Twilio API credentials
@@ -32,7 +28,6 @@ Add the following variables:
 makefile
 Copy code
 PORT=3000
-MONGODB_URI=your_mongodb_connection_string
 GOOGLE_MAPS_API_KEY=your_google_maps_api_key
 DIALOGFLOW_PROJECT_ID=your_dialogflow_project_id
 TWILIO_ACCOUNT_SID=your_twilio_account_sid
