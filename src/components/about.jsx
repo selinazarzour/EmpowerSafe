@@ -12,13 +12,13 @@ export const About = (props) => {
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
               <h2>About Us</h2>
-              <p>At SafeRoute, we understand the importance of feeling safe and secure as you move through different areas, whether you're commuting to work, running errands, or exploring new neighborhoods. Our mission is to empower individuals to make informed decisions about their routes by providing real-time insights into the safety levels of various areas.
+              <p>At EmpowerSafe, we understand the importance of feeling safe and secure as you move through your daily life, no matter if you're commuting to work, running errands, or exploring new neighborhoods. Our mission is to empower individuals to make informed decisions about their routes by providing real-time insights into how secure an area is.
 
-                Our platform leverages advanced algorithms and cutting-edge technology to analyze data points such as population density, crime statistics, lighting conditions, and more, to assess the safety of specific locations. Whether you're traveling alone or with others, whether it's day or night, SafeRoute equips you with the information you need to choose the safest and most efficient routes.
+                Our platform leverages advanced algorithms and cutting-edge technology to analyze data points such as population density, crime statistics, time of day, and more, to assess the safety of a specific location. Whether you're traveling alone or with others, during day or night, EmpowerSafe equips you with the information you need to choose the safest and most efficient routes.
 
-                But SafeRoute is more than just a navigation tool – it's a community-driven initiative focused on promoting safety and fostering connections among users. Through features like user matching and our chatbot assistance, we aim to create a network of support that enhances the safety and well-being of everyone using our platform.
+                But EmpowerSafe is more than just a navigation tool – it's a community-driven initiative focused on promoting safety and fostering connections among users. Through features like our chatbot assistance, we aim to create a network of support that enhances the safety and well-being of everyone using our platform.
 
-                At SafeRoute, safety is not just a destination – it's a journey we embark on together. Join us in creating a safer, more connected world, one route at a time.</p>
+                At EmpowerSafe, safety is not just a destination – it's a journey we embark on together. Join us in creating a safer, more connected world, one route at a time.</p>
               <h3>Why Choose Us?</h3>
               <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
