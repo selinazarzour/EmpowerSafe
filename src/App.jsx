@@ -43,22 +43,22 @@ const featureData = [
 const teamData = [
   {
     name: "Linda Gao",
-    job: "CEO",
+    job: "Frontend Developer",
     image: "img/team/linda.jpeg", // Replace with actual image URL
   },
   {
     name: "Selina Zarzour",
-    job: "Lead Developer",
+    job: "Frontend Developer",
     image: "https://media.licdn.com/dms/image/D5603AQFKJA9a3JgkYQ/profile-displayphoto-shrink_800_800/0/1703831751128?e=1717027200&v=beta&t=yXPNZF11FjATyL41EYBoRTpMTBRq-TGvHaKgGlycQz0", // Replace with actual image URL
   },
   {
     name: "Arushi Bhatt",
-    job: "Designer",
+    job: "Backend Developer",
     image: "https://example.com/arushi.jpg", // Replace with actual image URL
   },
   {
-    name: "Stuti",
-    job: "Marketing Manager",
+    name: "Stuti Sapru",
+    job: "Backend Developer",
     image: "https://example.com/stuti.jpg", // Replace with actual image URL
   },
 ];

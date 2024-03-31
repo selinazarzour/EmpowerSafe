@@ -40,8 +40,7 @@ export const Chat = (props) => {
           <div className="section-title">
             <h2>Our Chat Bot</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-              dapibus leonec.
+              Connect with our 24/7 AI assistant for support.
             </p>
           </div>
           <div className="row">
