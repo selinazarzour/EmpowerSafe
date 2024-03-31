@@ -14,13 +14,19 @@ export const Maps = (props) => {
                 zoom: 12,
             });
 
+            // Initialize variables to store user's location
+            let userLatitude, userLongitude;
+
             // Get the user's current location
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(
                     (position) => {
+                        userLatitude = position.coords.latitude;
+                        userLongitude = position.coords.longitude;
+
                         const userLocation = {
-                            lat: position.coords.latitude,
-                            lng: position.coords.longitude,
+                            lat: userLatitude,
+                            lng: userLongitude,
                         };
 
                         // Create a marker for the user's location
@@ -35,6 +41,11 @@ export const Maps = (props) => {
 
                         // Center the map on the user's location
                         map.setCenter(userLocation);
+
+                        // Add click event listener to user's marker
+                        userMarker.addListener("click", () => {
+                            alert(`Latitude: ${userLatitude}, Longitude: ${userLongitude}`);
+                        });
                     },
                     (error) => {
                         console.error("Error getting user location:", error);
