@@ -43,7 +43,11 @@ const featureData = [
 const teamData = [
   {
     name: "Linda Gao",
+<<<<<<< HEAD
     job: "Project Manager",
+=======
+    job: "Frontend Developer",
+>>>>>>> 69a91c667728e37c70dbaa9a77e4136d06517e8e
     image: "img/team/linda.jpeg", // Replace with actual image URL
   },
   {
@@ -57,8 +61,13 @@ const teamData = [
     image: "https://example.com/arushi.jpg", // Replace with actual image URL
   },
   {
+<<<<<<< HEAD
     name: "Stuti",
     job: "Data Analyst",
+=======
+    name: "Stuti Sapru",
+    job: "Backend Developer",
+>>>>>>> 69a91c667728e37c70dbaa9a77e4136d06517e8e
     image: "https://example.com/stuti.jpg", // Replace with actual image URL
   },
 ];

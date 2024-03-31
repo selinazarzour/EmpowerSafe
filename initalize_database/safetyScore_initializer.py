@@ -2,7 +2,7 @@ import csv
 import pandas as pd
 
 #Load the existing CSV file into a into an DataFrame
-existing_data = pd.read_csv('Assault_Open_Data.csv')
+existing_data = pd.read_csv('EmpowerSafe/initalize_database/assault_openData.csv')
 
 #Assign dummy weights to impactful variables
 weights = {
