@@ -31,7 +31,7 @@ existing_data['SAFETY_SCORE'] = ((existing_data['SAFETY_SCORE'] - min_score) / (
 existing_data['SAFETY_SCORE'] = existing_data['SAFETY_SCORE'].round().astype(int)
 
 #Select only the desired columns needed in your output data file
-selected_columns = ['OCC_YEAR', 'OCC_DOY', 'OCC_DOW', 'OCC_HOUR', 'HOOD_158', 'LONG', 'LAT', 'SAFETY_SCORE']
+selected_columns = ['OCC_YEAR', 'OCC_DOY', 'OCC_DOW', 'OCC_HOUR', 'LONG', 'LAT', 'SAFETY_SCORE']
 existing_data_selected = existing_data[selected_columns]
 
 #Save the selected data to a new CSV file
