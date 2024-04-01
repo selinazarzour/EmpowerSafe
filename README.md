@@ -48,6 +48,3 @@ License
 This project is licensed under the MIT License.
 
 Acknowledgements
-
-Special thanks to [name] for their assistance with [feature]
-Inspiration from [source]
